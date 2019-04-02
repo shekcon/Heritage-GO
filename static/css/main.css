@@ -21,6 +21,7 @@ header {
 .header {
     display: flex;
     align-items: center;
+    justify-content:
 }
 
 .header--border {
@@ -34,7 +35,6 @@ header {
 .header__center {
     display: flex;
     width: 600px;
-    align-items: center;
 }
 
 .header__center__logo {
@@ -79,7 +79,7 @@ header {
 }
 
 @keyframes compass-spin {
-    0% { 
+    0% {
         transform: rotate(0deg);
     }
     100% {
@@ -117,7 +117,7 @@ header {
 
 .header__center__area__text__primary {
     font-size: 18px;
-    
+
 }
 
 .header__center__area__text__secondary {
@@ -151,7 +151,7 @@ header {
     transition: all .2s ease;
     top: -40px;
   }
-  
+
 .textbox-modal {
     width: 100%;
     height: 50px;
@@ -165,22 +165,22 @@ header {
     border-bottom: solid 2px #0956F0;
     outline: none;
   }
-  
+
 input[type="text"]:focus ~ label{
     cursor: text;
     top: -70px;
     color: #0956F0;
   }
-  
-  
-  
+
+
+
 input[type="password"]:focus ~ label{
     cursor: text;
     top: -65px;
     color: #0956F0;
   }
-  
-  
+
+
 .submit-modal{
     margin: auto;
     width: 100%;
@@ -189,6 +189,57 @@ input[type="password"]:focus ~ label{
     font-size: 1.55em;
     border-radius: 5px;
     padding: 10px 0;
-  }
-  
-  
+}
+
+/*-------------------------------------*/
+.header-photo{
+  height: 100px;
+  width: 100%
+}
+
+.post{
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-post{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.info-header-post{
+  width: 100%;
+  padding-left: 3px;
+  display: flex;
+  flex-direction: column
+}
+
+.avatar-user{
+  margin: auto;
+  width: 48.85px;
+  height: 48.85px;
+}
+
+.photo-post{
+  width: 100%;
+  height: 344px;
+}
+
+
+.interaction-post{
+  margin: 0px 10px 0px 10px;
+  padding: 10px 10px 10px 30px;
+  align-items: center;
+  border: none;
+  border-bottom: 1.5px solid rgb(187, 190, 193)
+}
+
+.comment-post{
+  margin: 10px 10px 10px 10px;
+  clear:both;
+  border: 1.5px solid rgb(187, 190, 193);
+  border-radius: 25px;
+  width: auto;
+  height: 50px;
+}
