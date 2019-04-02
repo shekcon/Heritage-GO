@@ -51,7 +51,7 @@
                     </button>
                 <!-- Modal -->
                     <div class="modal fade bd-example-modal-lg" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-dialog" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
                               <h5 class="modal-title" style="font-weight: bold" id="exampleModalLabel">Log in</h5>
@@ -67,7 +67,7 @@
                                 <div>
                                   <input class="textbox-modal" required type="password" id="passwordTextbox" onblur="blurPassword()"/>
                                   <label class="label-modal" id="passwordLabel">Password</label>
-                                  <i class="fas fa-lock" id="passwordIcon" style="position: relative; top: -35px; left: 660px" onclick="showPassword()"></i>
+                                  <i class="fas fa-lock" id="passwordIcon" style="position: relative; top: -35px; left: 350px" onclick="showPassword()"></i>
                                 </div>
                               </div>
                               <div>
@@ -80,38 +80,83 @@
                 </div>
             </div>
         </header>
-        <div class="header__center" style="margin: auto;">
-            <div class="post" style="border: 2px solid black">
-              <div class="header-post" style="border: 2px solid black">
-                <img class="avatar-user" src="./static/img/avt.png" />
-                <div class="info-header-post">
-                  <p style="display: inline-block;">The main entrance to Le Van Duyet mausoleum - Sai Gon - 1965 -lo------------</p>
-                  <div>
-                    <i class="fas fa-map-marker-alt">Sai Gon, Viet Nam</i>
-                    <i class="far fa-clock" style="margin">1965</i>
-                  </div>
+
+        <!-- body -->
+        <div class="body">
+          <!-- 1st post -->
+          <div class="post">
+            <div class="header-post">
+              <img class="avatar-user" src="./static/img/avt.png" />
+              <div class="info-header-post">
+                <p style="display: inline-block;">The main entrance to Le Van Duyet mausoleum - Sai Gon - 1965 -lo------------</p>
+                <div>
+                  <i class="fas fa-map-marker-alt" style="padding-right: 5px"></i>Sai Gon, Viet Nam
+                  <i class="far fa-clock" style="padding-left: 20px; padding-right: 5px;"></i>1965
                 </div>
               </div>
-              <img  class="photo-post" src="./static/img/photo.jpeg"/>
-              <div class="interaction-post">
-                  <div style="display: inline;">
-                    <i class="fas fa-heart fa-lg"></i>
-                    <b>0</b>
-                  </div>
-                  <div style="display: inline; margin-left: 12px">
-                    <i class="fas fa-comment fa-lg"></i>
-                    <b>0</b>
-                  </div>
-                  <div style="display: inline; margin-left: 12px">
-                    <i class="fas fa-camera fa-lg"></i>
-                    <b>0</b>
-                  </div>
-                  <div style="display: inline; margin-left: 375px;">
-                    <i class="fas fa-bookmark fa-lg"></i>
-                  </div>
+            </div>
+            <img  class="photo-post" src="./static/img/photo.jpeg"/>
+            <div class="interaction-post">
+                <div style="display: inline;">
+                  <i class="fas fa-heart fa-lg"></i>
+                  <b>0</b>
+                </div>
+                <div style="display: inline; margin-left: 20px">
+                  <i class="fas fa-comment fa-lg"></i>
+                  <b>0</b>
+                </div>
+                <div style="display: inline; margin-left: 20px">
+                  <i class="fas fa-camera fa-lg"></i>
+                  <b>0</b>
+                </div>
+                <div style="display: inline; margin-left: 360px;">
+                  <i class="fas fa-bookmark fa-lg"></i>
+                </div>
+            </div>
+            <input class="comment-post" onclick="commentLabel_focus()"></input>
+            <div class="placeholder-submit-comment-post">
+              <label class="comment-label-post" style="width: 85%" id="commentLabel" focus="focusLabel">Write a comment</label>
+              <i class="fas fa-paper-plane fa-lg comment-label-post"></i>  
+            </div>
+          </div>
+
+          <!-- 2nd post -->
+          <div class="post">
+            <div class="header-post">
+              <img class="avatar-user" src="./static/img/avt.png" />
+              <div class="info-header-post">
+                <p style="display: inline-block;">The main entrance to Le Van Duyet mausoleum - Sai Gon - 1965 -lo------------</p>
+                <div>
+                    <i class="fas fa-map-marker-alt" style="padding-right: 5px"></i>Sai Gon, Viet Nam
+                    <i class="far fa-clock" style="padding-left: 20px; padding-right: 5px;"></i>1965
+                </div>
               </div>
-              <input class="comment-post"></input>
-        <div>
+            </div>
+            <img  class="photo-post" src="./static/img/photo.jpeg"/>
+            <div class="interaction-post">
+                <div style="display: inline;">
+                  <i class="fas fa-heart fa-lg"></i>
+                  <b>0</b>
+                </div>
+                <div style="display: inline; margin-left: 20px">
+                  <i class="fas fa-comment fa-lg"></i>
+                  <b>0</b>
+                </div>
+                <div style="display: inline; margin-left: 20px">
+                  <i class="fas fa-camera fa-lg"></i>
+                  <b>0</b>
+                </div>
+                <div style="display: inline; margin-left: 360px;">
+                  <i class="fas fa-bookmark fa-lg"></i>
+                </div>
+            </div>
+            <input class="comment-post" onclick="commentLabel_focus()"></input>
+            <div class="placeholder-submit-comment-post">
+              <label class="comment-label-post" style="width: 85%" id="commentLabel" focus="focusLabel">Write a comment</label>
+              <i class="fas fa-paper-plane fa-lg comment-label-post"></i>  
+            </div>
+          </div>
+        </div>
 
     </main>
     <script

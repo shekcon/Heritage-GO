@@ -37,3 +37,9 @@ function blurEmail(){
         label.style.color = '#0956F0';
     }
 }
+
+function commentLabel_focus(){
+    alert("hihih");
+    let label = document.getElementById("commentLabel");
+    label.style.visibility = "hidden";
+}

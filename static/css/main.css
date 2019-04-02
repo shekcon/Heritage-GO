@@ -21,7 +21,6 @@ header {
 .header {
     display: flex;
     align-items: center;
-    justify-content:
 }
 
 .header--border {
@@ -30,6 +29,7 @@ header {
 
 .header__left {
     flex: auto;
+    width: 4.6%;
 }
 
 .header__center {
@@ -145,7 +145,7 @@ header {
 /* --------------wp12.13-------------------------- */
 .label-modal{
     position: relative;
-    display: inline-block;
+    display: inline;
     color: #625E60;
     font-size: 1.25em;
     transition: all .2s ease;
@@ -192,15 +192,24 @@ input[type="password"]:focus ~ label{
 }
 
 /*-------------------------------------*/
+.body{
+    width: 600px;
+    margin: auto;
+}
+
 .header-photo{
   height: 100px;
   width: 100%
 }
 
+
 .post{
+  border:  1.5px solid rgb(187, 190, 193);
   display: inline-flex;
   flex-direction: column;
   width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .header-post{
@@ -229,17 +238,36 @@ input[type="password"]:focus ~ label{
 
 .interaction-post{
   margin: 0px 10px 0px 10px;
-  padding: 10px 10px 10px 30px;
+  padding: 10px 0px 10px 30px;
   align-items: center;
   border: none;
   border-bottom: 1.5px solid rgb(187, 190, 193)
 }
 
+.react-post{
+    margin-left: 20px;
+}
+
 .comment-post{
-  margin: 10px 10px 10px 10px;
+  margin: 20px 10px 0px 10px;
   clear:both;
   border: 1.5px solid rgb(187, 190, 193);
   border-radius: 25px;
   width: auto;
   height: 50px;
 }
+
+.placeholder-submit-comment-post{
+    height: 0px;
+    margin-bottom: 20px;
+}
+
+.comment-label-post {
+    position: relative;
+    display: inline-block;
+    color: #625E60;
+    font-size: 1.25em;
+    transition: all .2s ease;
+    top: -42px;
+    padding-left: 25px;
+  }
